@@ -19,4 +19,9 @@ const useDarkMode = () => {
   };
 
   const [darkMode, setDarkMode] = useLocalStorage("dark", "true");
+
+  useEffect(() => {
+    var body = document.getElementsByTagName("BODY");
+    storedValue ? body.classList.toggle("dark-mode") : null;
+  }, [storedValue]);
 };
