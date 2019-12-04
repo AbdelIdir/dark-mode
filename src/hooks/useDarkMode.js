@@ -10,6 +10,6 @@ export const useDarkMode = () => {
       ? body.classList.toggle("dark-mode")
       : body.classList.remove("dark-mode");
   }, [darkMode]);
-
+debugger
   return [darkMode, setDarkMode];
 };
